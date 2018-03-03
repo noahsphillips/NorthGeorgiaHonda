@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4FA6FFD2048F644001B38A1 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA6FFC2048F644001B38A1 /* CustomerTableViewController.swift */; };
+		D4FA6FFF2048FAE4001B38A1 /* UsedCarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA6FFE2048FAE4001B38A1 /* UsedCarTableViewController.swift */; };
+		D4FA70032048FE00001B38A1 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA70022048FE00001B38A1 /* CustomerViewController.swift */; };
+		D4FA70052048FE63001B38A1 /* UsedCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA70042048FE63001B38A1 /* UsedCarViewController.swift */; };
+		D4FA7009204904FF001B38A1 /* NewCarTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA7008204904FF001B38A1 /* NewCarTableTableViewController.swift */; };
+		D4FA700B204905A5001B38A1 /* NewCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA700A204905A5001B38A1 /* NewCarViewController.swift */; };
 		D798B146203B4A34008753F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798B145203B4A34008753F8 /* AppDelegate.swift */; };
 		D798B148203B4A34008753F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798B147203B4A34008753F8 /* ViewController.swift */; };
 		D798B14B203B4A34008753F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D798B149203B4A34008753F8 /* Main.storyboard */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4FA6FFC2048F644001B38A1 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
+		D4FA6FFE2048FAE4001B38A1 /* UsedCarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarTableViewController.swift; sourceTree = "<group>"; };
+		D4FA70022048FE00001B38A1 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		D4FA70042048FE63001B38A1 /* UsedCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarViewController.swift; sourceTree = "<group>"; };
+		D4FA7008204904FF001B38A1 /* NewCarTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarTableTableViewController.swift; sourceTree = "<group>"; };
+		D4FA700A204905A5001B38A1 /* NewCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCarViewController.swift; sourceTree = "<group>"; };
 		D798B142203B4A34008753F8 /* NorthGeorgiaHonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NorthGeorgiaHonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D798B145203B4A34008753F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D798B147203B4A34008753F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +49,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4FA70002048FC7E001B38A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D798B147203B4A34008753F8 /* ViewController.swift */,
+				D4FA70022048FE00001B38A1 /* CustomerViewController.swift */,
+				D4FA70042048FE63001B38A1 /* UsedCarViewController.swift */,
+				D4FA700A204905A5001B38A1 /* NewCarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D4FA70012048FC92001B38A1 /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D4FA6FFC2048F644001B38A1 /* CustomerTableViewController.swift */,
+				D4FA6FFE2048FAE4001B38A1 /* UsedCarTableViewController.swift */,
+				D4FA7008204904FF001B38A1 /* NewCarTableTableViewController.swift */,
+			);
+			path = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		D4FA70072048FED9001B38A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D798B139203B4A33008753F8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +96,10 @@
 		D798B144203B4A34008753F8 /* NorthGeorgiaHonda */ = {
 			isa = PBXGroup;
 			children = (
+				D4FA70072048FED9001B38A1 /* Models */,
+				D4FA70012048FC92001B38A1 /* TableViewControllers */,
+				D4FA70002048FC7E001B38A1 /* ViewControllers */,
 				D798B145203B4A34008753F8 /* AppDelegate.swift */,
-				D798B147203B4A34008753F8 /* ViewController.swift */,
 				D798B149203B4A34008753F8 /* Main.storyboard */,
 				D798B14F203B4A34008753F8 /* Assets.xcassets */,
 				D798B151203B4A34008753F8 /* LaunchScreen.storyboard */,
@@ -139,9 +181,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FA70032048FE00001B38A1 /* CustomerViewController.swift in Sources */,
+				D4FA70052048FE63001B38A1 /* UsedCarViewController.swift in Sources */,
 				D798B148203B4A34008753F8 /* ViewController.swift in Sources */,
+				D4FA700B204905A5001B38A1 /* NewCarViewController.swift in Sources */,
 				D798B146203B4A34008753F8 /* AppDelegate.swift in Sources */,
 				D798B14E203B4A34008753F8 /* NorthGeorgiaHonda.xcdatamodeld in Sources */,
+				D4FA6FFD2048F644001B38A1 /* CustomerTableViewController.swift in Sources */,
+				D4FA7009204904FF001B38A1 /* NewCarTableTableViewController.swift in Sources */,
+				D4FA6FFF2048FAE4001B38A1 /* UsedCarTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
