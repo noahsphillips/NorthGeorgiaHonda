@@ -7,12 +7,15 @@
 //
 
 import UIKit
-
-var customerList = ["Noah", "Ben"]
 var customerIndex = 0
+var customerList: [Customer] = []
 
 class CustomerTableViewController: UITableViewController {
-
+//    @IBAction func AddCustomerSegue(_ sender: UIButton) {
+//        performSegue(withIdentifier: "addCustomerSegue", sender: self)
+//    }
+    
+    private var customerModel = CustomerModel()
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,7 +26,9 @@ class CustomerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customerNames", for: indexPath)
         
-        cell.textLabel?.text = customerList[indexPath.row]
+        let theCustomer: Customer = customerList[indexPath.row]
+        
+        cell.textLabel?.text = theCustomer.firstName! + " " + theCustomer.lastName!
 
         return cell
     }

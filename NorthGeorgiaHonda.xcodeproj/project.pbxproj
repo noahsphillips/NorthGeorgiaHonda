@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D417F590204B2B0C00BDFDDC /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D417F58F204B2B0C00BDFDDC /* CustomerModel.swift */; };
 		D4FA6FFD2048F644001B38A1 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA6FFC2048F644001B38A1 /* CustomerTableViewController.swift */; };
 		D4FA6FFF2048FAE4001B38A1 /* UsedCarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA6FFE2048FAE4001B38A1 /* UsedCarTableViewController.swift */; };
 		D4FA70032048FE00001B38A1 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FA70022048FE00001B38A1 /* CustomerViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D417F58F204B2B0C00BDFDDC /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 		D4FA6FFC2048F644001B38A1 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
 		D4FA6FFE2048FAE4001B38A1 /* UsedCarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCarTableViewController.swift; sourceTree = "<group>"; };
 		D4FA70022048FE00001B38A1 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		D4FA70072048FED9001B38A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D417F58F204B2B0C00BDFDDC /* CustomerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				D4FA70032048FE00001B38A1 /* CustomerViewController.swift in Sources */,
 				D4FA70052048FE63001B38A1 /* UsedCarViewController.swift in Sources */,
 				D798B148203B4A34008753F8 /* ViewController.swift in Sources */,
+				D417F590204B2B0C00BDFDDC /* CustomerModel.swift in Sources */,
 				D4FA700B204905A5001B38A1 /* NewCarViewController.swift in Sources */,
 				D798B146203B4A34008753F8 /* AppDelegate.swift in Sources */,
 				D798B14E203B4A34008753F8 /* NorthGeorgiaHonda.xcdatamodeld in Sources */,

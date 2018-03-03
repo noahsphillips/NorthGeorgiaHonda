@@ -130,6 +130,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Used Cars" id="2yY-RQ-LCJ">
                         <barButtonItem key="backBarButtonItem" title="Back" id="zsm-oM-Tgv"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="3I9-rt-SPg">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U0K-fL-jNo">
+                                <rect key="frame" x="263" y="7" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Used Car"/>
+                                <connections>
+                                    <segue destination="vA0-UK-aBx" kind="show" id="wHj-X7-53x"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="Qsn-19-4U5" kind="show" identifier="toUsedCarDetails" id="TJi-iv-Me2"/>
@@ -164,6 +174,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Customers" id="hq5-ib-5rr">
                         <barButtonItem key="backBarButtonItem" title="Back" id="MKo-QD-Vf7"/>
+                        <barButtonItem key="rightBarButtonItem" title="New Customer" style="plain" id="cIn-KH-UBb">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rTf-aL-b7h">
+                                <rect key="frame" x="257" y="7" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="New Customer"/>
+                                <connections>
+                                    <segue destination="SPl-Tq-GO0" kind="show" id="6ce-mw-tbm"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="2Wf-i2-TYs" kind="show" identifier="toCustomerDetail" id="ea2-GC-66O"/>
@@ -203,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXz-aM-m6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="847"/>
+            <point key="canvasLocation" x="2646" y="1503"/>
         </scene>
         <!--New Cars-->
         <scene sceneID="wke-7X-Njc">
@@ -230,6 +250,16 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="New Cars" id="99z-bP-Nwv">
                         <barButtonItem key="backBarButtonItem" title="Back" id="SlR-wo-gGA"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="VCh-qI-PVM">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Cg-lC-0Ec">
+                                <rect key="frame" x="268" y="7" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add New Car"/>
+                                <connections>
+                                    <segue destination="LQ5-Qh-7JT" kind="show" id="Mxv-j1-697"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="wCz-I3-LEN" kind="show" identifier="toNewCarDetails" id="5bw-YU-rfV"/>
@@ -287,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmp-4v-qJh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="133"/>
+            <point key="canvasLocation" x="2820" y="729"/>
         </scene>
         <!--New Car Details-->
         <scene sceneID="lNz-Zm-dj9">
@@ -319,7 +349,184 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="feP-LB-fIN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="-531"/>
+            <point key="canvasLocation" x="2626" y="-627"/>
+        </scene>
+        <!--Add Customer-->
+        <scene sceneID="ko6-tD-mOS">
+            <objects>
+                <viewController title="Add Customer" id="SPl-Tq-GO0" customClass="ViewController" customModule="NorthGeorgiaHonda" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g6X-ou-XGR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xh3-Rf-FxV">
+                                <rect key="frame" x="70" y="231" width="235" height="205"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3C7-8R-Cdu">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xv2-HK-SGe">
+                                        <rect key="frame" x="0.0" y="55" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-oz-1sI">
+                                        <rect key="frame" x="0.0" y="95" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Isp-WN-PrG">
+                                        <rect key="frame" x="0.0" y="135" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQz-dv-qsr">
+                                        <rect key="frame" x="0.0" y="175" width="235" height="30"/>
+                                        <state key="normal" title="Add Customer"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BwP-f5-eFZ" firstAttribute="bottom" secondItem="Xh3-Rf-FxV" secondAttribute="bottom" constant="199" id="2Nv-CZ-h5p"/>
+                            <constraint firstItem="BwP-f5-eFZ" firstAttribute="trailing" secondItem="Xh3-Rf-FxV" secondAttribute="trailing" constant="70" id="2dW-dt-rSe"/>
+                            <constraint firstItem="Xh3-Rf-FxV" firstAttribute="top" secondItem="BwP-f5-eFZ" secondAttribute="top" constant="199" id="5zN-l3-O74"/>
+                            <constraint firstItem="BwP-f5-eFZ" firstAttribute="bottom" secondItem="Xh3-Rf-FxV" secondAttribute="bottom" constant="199" id="U0Q-Yw-jZo"/>
+                            <constraint firstItem="Xh3-Rf-FxV" firstAttribute="leading" secondItem="BwP-f5-eFZ" secondAttribute="leading" constant="70" id="aLj-Es-ki7"/>
+                            <constraint firstItem="Xh3-Rf-FxV" firstAttribute="leading" secondItem="BwP-f5-eFZ" secondAttribute="leading" constant="70" id="brw-St-9py"/>
+                            <constraint firstItem="BwP-f5-eFZ" firstAttribute="trailing" secondItem="Xh3-Rf-FxV" secondAttribute="trailing" constant="70" id="pms-n5-a05"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BwP-f5-eFZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q66-Wh-Mea" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1660" y="1747"/>
+        </scene>
+        <!--Add Used Car-->
+        <scene sceneID="gLP-By-hfM">
+            <objects>
+                <viewController title="Add Used Car" id="vA0-UK-aBx" customClass="ViewController" customModule="NorthGeorgiaHonda" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4mf-es-57x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XQW-V7-lNa">
+                                <rect key="frame" x="70" y="231" width="235" height="205"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdY-pc-9FC">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7yq-Px-WSj">
+                                        <rect key="frame" x="0.0" y="55" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cQ-5x-0al">
+                                        <rect key="frame" x="0.0" y="95" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-7Y-0Qf">
+                                        <rect key="frame" x="0.0" y="135" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRy-cn-JOa">
+                                        <rect key="frame" x="0.0" y="175" width="235" height="30"/>
+                                        <state key="normal" title="Add Used Car"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d9v-gi-YEi" firstAttribute="bottom" secondItem="XQW-V7-lNa" secondAttribute="bottom" constant="199" id="B2Z-ke-bxZ"/>
+                            <constraint firstItem="XQW-V7-lNa" firstAttribute="leading" secondItem="d9v-gi-YEi" secondAttribute="leading" constant="70" id="Ehm-N2-7eC"/>
+                            <constraint firstItem="d9v-gi-YEi" firstAttribute="bottom" secondItem="XQW-V7-lNa" secondAttribute="bottom" constant="199" id="cvd-FJ-2LG"/>
+                            <constraint firstItem="XQW-V7-lNa" firstAttribute="leading" secondItem="d9v-gi-YEi" secondAttribute="leading" constant="70" id="fsP-86-kKI"/>
+                            <constraint firstItem="d9v-gi-YEi" firstAttribute="trailing" secondItem="XQW-V7-lNa" secondAttribute="trailing" constant="70" id="jCb-LF-PJP"/>
+                            <constraint firstItem="d9v-gi-YEi" firstAttribute="trailing" secondItem="XQW-V7-lNa" secondAttribute="trailing" constant="70" id="u0T-hY-bET"/>
+                            <constraint firstItem="XQW-V7-lNa" firstAttribute="top" secondItem="d9v-gi-YEi" secondAttribute="top" constant="199" id="yiR-uW-LBf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d9v-gi-YEi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftq-ib-l4x" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2625" y="63"/>
+        </scene>
+        <!--Add New Car-->
+        <scene sceneID="HIn-46-aHR">
+            <objects>
+                <viewController title="Add New Car" id="LQ5-Qh-7JT" customClass="ViewController" customModule="NorthGeorgiaHonda" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8S-Ya-quF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G2n-uK-HaK">
+                                <rect key="frame" x="70" y="231" width="235" height="205"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q8C-v5-G84">
+                                        <rect key="frame" x="0.0" y="0.0" width="235" height="45"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFr-sk-fWw">
+                                        <rect key="frame" x="0.0" y="55" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E3e-vj-fYr">
+                                        <rect key="frame" x="0.0" y="95" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jly-mw-ZNq">
+                                        <rect key="frame" x="0.0" y="135" width="235" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mS3-Fo-yuF">
+                                        <rect key="frame" x="0.0" y="175" width="235" height="30"/>
+                                        <state key="normal" title="Add New Car"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G2n-uK-HaK" firstAttribute="top" secondItem="DmH-aE-kRb" secondAttribute="top" constant="199" id="6dK-sI-NPr"/>
+                            <constraint firstItem="G2n-uK-HaK" firstAttribute="leading" secondItem="DmH-aE-kRb" secondAttribute="leading" constant="70" id="FhE-PS-8cb"/>
+                            <constraint firstItem="DmH-aE-kRb" firstAttribute="trailing" secondItem="G2n-uK-HaK" secondAttribute="trailing" constant="70" id="bfd-Vi-mQO"/>
+                            <constraint firstItem="G2n-uK-HaK" firstAttribute="leading" secondItem="DmH-aE-kRb" secondAttribute="leading" constant="70" id="s6K-mz-Tdk"/>
+                            <constraint firstItem="DmH-aE-kRb" firstAttribute="bottom" secondItem="G2n-uK-HaK" secondAttribute="bottom" constant="199" id="ujH-6t-Nzq"/>
+                            <constraint firstItem="DmH-aE-kRb" firstAttribute="trailing" secondItem="G2n-uK-HaK" secondAttribute="trailing" constant="70" id="xPX-pH-aJm"/>
+                            <constraint firstItem="DmH-aE-kRb" firstAttribute="bottom" secondItem="G2n-uK-HaK" secondAttribute="bottom" constant="199" id="z26-YC-Vlc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DmH-aE-kRb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DyO-rA-E1d" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2646" y="-1348"/>
         </scene>
     </scenes>
 </document>
