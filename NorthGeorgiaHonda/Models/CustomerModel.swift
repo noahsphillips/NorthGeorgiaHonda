@@ -47,6 +47,14 @@ class CustomerModel
         
         return customerList
     }
+    func testUser(username: String, password: String) -> Bool {
+        
+        if (username == "admin" && password == "admin") {
+            return true
+        }
+        
+        return false
+    }
     
 }
 

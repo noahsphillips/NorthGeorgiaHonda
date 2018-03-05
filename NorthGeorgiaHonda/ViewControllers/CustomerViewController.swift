@@ -11,12 +11,17 @@ import UIKit
 class CustomerViewController: UIViewController {
 
     @IBOutlet weak var customerNameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    var customerModel = CustomerModel()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        customerNameLabel.text = customerList[customerIndex].firstName!
+        
+        let theCustomer: Customer = customerModel.getCustomerList()[customerIndex]
+        customerNameLabel.text = theCustomer.firstName! + " " + theCustomer.lastName!
+        emailLabel.text = theCustomer.email!
         
     }
     
@@ -25,15 +30,4 @@ class CustomerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -7,16 +7,22 @@
         <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="NewCar" representedClassName="NewCar" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <entity name="UsedCar" representedClassName="UsedCar" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manufacturer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="price" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
     <elements>
         <element name="Customer" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="UsedCar" positionX="-54" positionY="-9" width="128" height="75"/>
-        <element name="NewCar" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="NewCar" positionX="-36" positionY="9" width="128" height="120"/>
+        <element name="UsedCar" positionX="-54" positionY="-9" width="128" height="120"/>
     </elements>
 </model>

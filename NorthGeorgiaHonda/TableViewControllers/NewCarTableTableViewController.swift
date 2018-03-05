@@ -8,22 +8,25 @@
 
 import UIKit
 
-var newCarList = ["2016 Ford Explorer", "2018 Nissan Sentra"]
 var newCarIndex = 0
 
 class NewCarTableTableViewController: UITableViewController {
+    
+    private var newCarModel = NewCarModel()
     
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return newCarList.count
+        return newCarModel.getCarList().count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "newCars", for: indexPath)
         
-        cell.textLabel?.text = newCarList[indexPath.row]
+        let theNewCar: NewCar = newCarModel.getCarList()[indexPath.row]
+        
+        cell.textLabel?.text = (String)(theNewCar.year) + " " + theNewCar.manufacturer! + " " + theNewCar.model!
         
         return cell
     }
@@ -33,4 +36,15 @@ class NewCarTableTableViewController: UITableViewController {
         performSegue(withIdentifier: "toNewCarDetails", sender: self)
     }
     
+    @IBOutlet weak var newCarTableView: UITableView!
+    override func viewWillAppear(_ animated: Bool) {
+        newCarTableView.reloadData()
+        
+    }
+    override func viewDidLoad() {
+        newCarTableView.reloadData()
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
 }
